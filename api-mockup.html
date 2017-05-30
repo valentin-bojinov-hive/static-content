@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hive API 6.5</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs1, #tabs" ).tabs();
+  } );
+  </script>
+  
+</head>
+<body>
+<div style="width: 80%; margin-left:10%">
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">Operation</a></li>
+      <li><a href="#tabs-2">JSON Schema</a></li>
+      <li><a href="#tabs-3">Payload</a></li>
+    </ul>
+    <div id="tabs-1">
+      <p>/users</p>
+    </div>
+    <div id="tabs-2">
+      <div style="background-color: lightblue "><pre>
+      {
+        "title": "user",
+        "type": "object",
+        "properties": {
+            "named-property-1": {
+                "description": "general property description"
+                "type": "string"
+            },
+            "named-property-2": {
+                "description": "general property description" 
+                "type": "string"
+            },
+            "named-property-3": {
+                "description": "general property description",
+                "type": "string",
+                
+            }
+        },
+        "required": ["named-property-1", "named-property-2"]
+      }   
+      </pre></div>
+    </div>
+    <div id="tabs-3">
+      <div style="background-color: lightblue "><pre>
+      {
+        "user-property-1": "User proeprty 1",
+        "user-property-2": "User property 2",
+        "user-property-3": "User property 3"
+      }
+      </pre></div>
+      <input type="button" value="Test"/>
+    </div>
+  </div>
+  <div id="tabs1">
+    <ul>
+      <li><a href="#tabs-11">Operation</a></li>
+      <li><a href="#tabs-21">JSON Schema</a></li>
+      <li><a href="#tabs-31">Payload</a></li>
+    </ul>
+    <div id="tabs-11">
+      <p>/events</p>
+    </div>
+    <div id="tabs-21">
+      <div style="background-color: lightblue "><pre>
+      {
+        "title": "event",
+        "type": "object",
+        "properties": {
+            "event-property-1": {
+                "description": "general property description"
+                "type": "string"
+            },
+            "event-property-2": {
+                "description": "general property description" 
+                "type": "string"
+            },
+            "event-property-3": {
+                "description": "general property description",
+                "type": "string",
+                
+            }
+        },
+        "required": ["event-property-1", "event-property-2"]
+      }   
+      </pre></div>
+    </div>
+    <div id="tabs-31">
+      <div style="background-color: lightblue "><pre>
+      {
+        "event-property-1": "Event property 1",
+        "event-property-2": "Event property 2",
+        "event-property-3": "Event property 3"
+      }
+      </pre></div>
+      <input type="button" value="Test"/>
+
+    </div>
+  </div>
+</div>
+ 
+</body>
+</html>

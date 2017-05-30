@@ -1,0 +1,16 @@
+<api>
+	<operation uri="/users">
+		<get>
+			<description></description>
+			<schema>users-schema.json</schema>
+			<payload>users-payload.json</payload>
+		</get>
+	</operation>
+	<operation uri="/events">
+		<get>
+			<description></description>
+			<schema>event-schema.json</schema>
+			<payload>event-payload.json</payload>
+		</get>
+	</operation>
+</api>
